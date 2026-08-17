@@ -21,8 +21,9 @@ help:
 	@echo ""
 
 setup:
-	cp -n .env.example .env || true
-	mkdir -p logs
+	@test -f .env || cp .env.example .env
+	@mkdir -p logs
+	@echo "Setup terminé (.env et logs/ créés)"
 
 login:
 	docker login ghcr.io
