@@ -30,5 +30,6 @@ services:
 networks:
   woxxapp-network:
     external: true
+    name: woxxapp-store_woxxapp-network
   woxxpay_private_api:
     external: true
