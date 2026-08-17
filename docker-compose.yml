@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: ghcr.io/woxxapp/store-multitenants-frontend:latest
+    image: ghcr.io/bezbee25/store-multitenants-frontend:latest
     container_name: store-multitenants-site
     restart: always
     ports:
@@ -11,7 +11,7 @@ services:
       - woxxapp-network
 
   backend:
-    image: ghcr.io/woxxapp/store-multitenants-backend:latest
+    image: ghcr.io/bezbee25/store-multitenants-backend:latest
     container_name: store-multitenants-api
     restart: always
     environment:
